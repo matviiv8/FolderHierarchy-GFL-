@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderHierarchy(GFL)", "FolderHierarchy(GFL)\FolderHierarchy(GFL).csproj", "{23E0A1C7-076D-4758-BD8A-E9A039759B9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23E0A1C7-076D-4758-BD8A-E9A039759B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E0A1C7-076D-4758-BD8A-E9A039759B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E0A1C7-076D-4758-BD8A-E9A039759B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E0A1C7-076D-4758-BD8A-E9A039759B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BE21CDF-6753-4109-92B5-ECDDA7F24762}
+	EndGlobalSection
+EndGlobal

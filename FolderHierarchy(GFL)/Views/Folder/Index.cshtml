@@ -1,0 +1,11 @@
+﻿@model IEnumerable<FolderHierarchy_GFL_.Models.Folder>
+
+    @{
+    ViewData["Title"] = "Index";
+}
+
+<h1></h1>
+
+@foreach (var item in Model) {
+    <p>@Html.ActionLink(item.Name,"Index", "Folder", new{ id = item.Id})</p>
+}
