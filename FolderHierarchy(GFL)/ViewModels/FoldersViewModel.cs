@@ -6,6 +6,7 @@ namespace FolderHierarchy_GFL_.ViewModels
     {
         public int? Id { get; set; }
         public string? Name { get; set; }
+        public string? Path { get; set; }
         public List<Folder>? Childrens { get; set; }
     }
 }

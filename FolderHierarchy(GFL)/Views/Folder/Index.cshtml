@@ -9,7 +9,7 @@
  <div class="children-folders">
     @if(Model.Childrens.Count>0){
         @foreach (var item in Model.Childrens) {
-            @Html.ActionLink(item.Name,"Index", "Folder", new{ id = item.Id})
+            @Html.ActionLink(item.Name,"Index", "Folder", new{ path = @Model.Path + "/" + item.Name})
         }
     }
     else{
@@ -17,6 +17,3 @@
     }
 </div>
 
-@if(Model.Id > 1){
-    @Html.ActionLink("Back","Index", "Folder", new{ id = Model.Id-1})
-}
