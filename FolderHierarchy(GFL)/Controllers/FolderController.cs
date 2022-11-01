@@ -14,12 +14,20 @@ namespace FolderHierarchy_GFL_.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(int id)
+        [Route("{**path}")]
+        public async Task<IActionResult> Index(string path)
         {
             FoldersViewModel folderViewModel = new FoldersViewModel();
-            folderViewModel.Id = id;
-            folderViewModel.Name = _context.Folders.Where(x => x.Id == id).FirstOrDefault().Name;
-            folderViewModel.Childrens = await _context.Folders.Where(x => x.ParentId == id).ToListAsync();
+
+            if (path == null)
+            {
+                return View("Views/Home/Index.cshtml");
+            }
+          
+            folderViewModel.Name = path.Split('/').LastOrDefault("");
+            folderViewModel.Path += path;
+            folderViewModel.Id = _context.Folders.FirstOrDefault(x => x.Name == folderViewModel.Name)?.Id;
+            folderViewModel.Childrens = await _context.Folders.Where(x => x.ParentId == folderViewModel.Id).ToListAsync();
 
             return View(folderViewModel);
         }

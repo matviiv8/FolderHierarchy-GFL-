@@ -4,5 +4,5 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-      @Html.ActionLink("View Folder Hierarchy","Index", "Folder", new{ id = 1})
+      @Html.ActionLink("View Folder Hierarchy","Index", "Folder", new{ path = @Context.Request.Path + "Creating Digital Images"})
 </div>
